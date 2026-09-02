@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-  pull_requests:
+  pull_request:
 
 concurrency:
   group: chromatic-${{github.ref}}
@@ -12,7 +12,7 @@ concurrency:
 
 permissions:
   contents: read
-  pull-request: write
+  pull-requests: write
 
 jobs:
   chromatic:
