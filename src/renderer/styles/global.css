@@ -1,0 +1,91 @@
+@import './tokens.css';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: var(--space-lg);
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+}
+
+h1 {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    margin: 0 0 var(--space-sm);
+}
+
+h2 {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    margin: 0 0 var(--space-xs);
+}
+
+p {
+    color: var(--color-text-muted);
+}
+
+button {
+    font-family: inherit;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
+    background: var(--color-primary);
+    color: var(--color-primary-text);
+    border: none;
+    border-radius: var(--radius-base);
+    padding: var(--space-xs) var(--space-md);
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.15);
+}
+
+.card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-base);
+    padding: var(--space-md);
+    margin-top: var(--space-md);
+}
+
+.book-list {
+    list-style: none;
+    padding: 0;
+    margin: var(--space-md) 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.book-list li {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-base);
+    padding: var(--space-sm);
+}
+
+.book-list img {
+    border-radius: 4px;
+}
+
+.favorite-btn {
+    background: none;
+    color: var(--color-star);
+    font-size: var(--font-size-lg);
+    padding: 0 var(--space-xs);
+}
+
+.error-text {
+    color: var(--color-danger);
+}
