@@ -1,13 +1,13 @@
 :root {
     /* color tokens — light (default) */
     --color-bg: #ffffff;
-    --color-surface: #f4f4f6;
+    --color-surface: #f40000;
     --color-border: #dcdce1;
     --color-text: #1a1a1f;
     --color-text-muted: #63636e;
     --color-primary: #5b4fcf;
     --color-primary-text: #ffffff;
-    --color-danger: #c0392b;
+    --color-danger: #c03950;
     --color-star: #d4a017;
 
     /* typography tokens */
